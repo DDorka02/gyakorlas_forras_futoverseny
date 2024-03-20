@@ -6,10 +6,12 @@ const befutottVersenyzok = [];
 function letrehozTablazat(tomb) {
     let txt ="<table>"
     for (let index = 0; index < tomb.length; index++) {
-        const element =tomb[index];
-        console.log(element)
-
-        txt += `<tr><td>"${element.nev}${element.}${element.nev}${element.nev}"</tr>`
+        txt += "<tr>"
+        txt += "<td>"+ FUTOK[index].nev+"</td>"
+        txt += "<td>"+ FUTOK[index].nemzetiseg+"</td>"
+        txt += "<td>"+ FUTOK[index].versenyIdo+"</td>"
+        txt += "<td>"+ FUTOK[index].versenySzam+"</td>"
+        txt += "</tr>"
     }
     txt +="</table>"
     console.log(txt)
